@@ -1,31 +1,22 @@
 name: PCLA
 channels:
+  - pytorch
+  - nvidia
+  - conda-forge
   - defaults
-  - https://repo.anaconda.com/pkgs/main
-  - https://repo.anaconda.com/pkgs/r
 dependencies:
-  - _libgcc_mutex=0.1=main
-  - _openmp_mutex=5.1=1_gnu
-  - ca-certificates=2024.11.26=h06a4308_0
-  - certifi=2022.12.7=py37h06a4308_0
-  - ld_impl_linux-64=2.40=h12ee557_0
-  - libffi=3.4.4=h6a678d5_1
-  - libgcc-ng=11.2.0=h1234567_1
-  - libgomp=11.2.0=h1234567_1
-  - libstdcxx-ng=11.2.0=h1234567_1
-  - ncurses=6.4=h6a678d5_0
-  - openssl=1.1.1w=h7f8727e_0
-  - pip=22.3.1=py37h06a4308_0
-  - python=3.7.16=h7a1cb2a_0
-  - readline=8.2=h5eee18b_0
-  - setuptools=65.6.3=py37h06a4308_0
-  - sqlite=3.45.3=h5eee18b_0
-  - tk=8.6.14=h39e8969_0
-  - wheel=0.38.4=py37h06a4308_0
-  - xz=5.4.6=h5eee18b_1
-  - zlib=1.2.13=h5eee18b_1
+  - python=3.8.10 
+  - pytorch=1.13.1
+  - torchvision=0.14.1
+  - cudatoolkit=11.7
+  - numpy=1.21.6
+  - matplotlib=3.5.3
+  - scikit-learn=1.0.2
+  - scipy=1.7.3
+  - opencv
+  - pip
   - pip:
-      - carla==0.9.15
+      - carla==0.9.13
       - charset-normalizer==3.4.0
       - cycler==0.11.0
       - easydict==1.13
@@ -45,11 +36,6 @@ dependencies:
       - matplotlib==3.5.3
       - networkx==2.6.3
       - numpy==1.21.6
-      - nvidia-cublas-cu11==11.10.3.66
-      - nvidia-cuda-nvrtc-cu11==11.7.99
-      - nvidia-cuda-runtime-cu11==11.7.99
-      - nvidia-cudnn-cu11==8.5.0.96
-      - opencv-python==4.10.0.84
       - packaging==24.0
       - pillow==9.5.0
       - py-trees==2.1.6

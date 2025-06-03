@@ -2,6 +2,12 @@
 <b>PCLA: A framework for testing autonomous agents in CARLA simulator</b>
 </p>
 
+## Changes in Fork
+
+- Adjusted `environment.yml` for **Windows** and updated **CARLA version to 0.9.13** for compatibility with **DReyeVR**.
+- Install your CARLA Python API built from source build with DReyeVR after activating the conda environment using:  
+  `pip install <path_to_carla>/PythonAPI/carla/dist/carla-0.9.13-cp38-cp38-win_amd64.whl`
+
 <p align="center">
 PCLA (Pretrained CARLA Leaderboard Agent) is a versatile framework that allows you to utilize the autonomous agents from the <a href="https://leaderboard.carla.org/leaderboard/">CARLA Leaderboard</a> independently of its core codebase and put them on your vehicle. </br>
 
